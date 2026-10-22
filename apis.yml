@@ -1,23 +1,121 @@
 aid: ailo
+
 name: Ailo
-description: 'Ailo is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Ailo is an Australian property management platform, co-founded in 2017, that connects the people, work and money involved in property management. Renters, property managers, property investors (owners) and tradespeople use the Ailo Platform and mobile app to see rent, payments, inspections, repair requests and messages in one place, with Ailo handling the financial transactions between them. Surfaced via the API Evangelist harvest backlog (australia-apidays-2026); no public developer API was identified in the identity pass.
+
 url: https://raw.githubusercontent.com/api-evangelist/ailo/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Property Management
+- Real Estate
+- PropTech
+- Rent Payments
+- Payments
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://ailo.io/images/default-social-image-preview.png
+
 common:
+- type: Plans
+  url: plans/ailo-plans-pricing.yml
+- type: ChangeLog
+  url: changelog/ailo-changelog.yml
+- type: Compliance
+  url: https://ailo.io/security
+- type: SecurityTxt
+  url: well-known/ailo-security.txt
+- type: WellKnown
+  url: well-known/ailo-well-known.yml
+- type: Hosts
+  url: hosts/ailo-hosts.yml
+- type: Vendors
+  url: vendors/ailo-vendors.yml
+- type: SignUp
+  url: https://ailo.io/register-mecca-event
+- type: Leadership
+  url: https://ailo.io/team/benjamin-ling
+- type: GettingStarted
+  url: https://ailo.io/handbook-training-onboarding
+- type: Documentation
+  url: https://help.ailo.io/
 - type: Website
   url: https://ailo.io/
+- type: TrustCenter
+  url: security/ailo-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/ailo-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/ailo-domain-security.yml
+- type: Blog
+  url: https://ailo.io/blog
+- type: ChangeLog
+  url: https://ailo.io/whats-new
+- type: Support
+  url: https://help.ailo.io/hc/en-au
+- type: AboutUs
+  url: https://ailo.io/about-us
+- type: Contact
+  url: https://ailo.io/contact
+- type: Careers
+  url: https://ailo.io/careers
+- type: Security
+  url: https://ailo.io/security
+- type: TermsOfService
+  url: https://ailo.io/terms
+- type: PrivacyPolicy
+  url: https://ailo.io/privacy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ailo/
+- type: Facebook
+  url: https://www.facebook.com/ailohq/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website ailo.io self-identifies as the Ailo Platform (property management). Pointers taken from homepage links and preflight site_links; help.ailo.io 403 to curl but 200 in preflight browser probe. /register-mecca-event sitemap link not recorded as SignUp (event registration).
+  evidence:
+  - url: https://ailo.io/
+    status: 200
+  - url: https://ailo.io/about-us
+    status: 200
+  - url: https://ailo.io/blog
+    status: 200
+  - url: https://ailo.io/whats-new
+    status: 200
+  - url: https://ailo.io/terms
+    status: 200
+  - url: https://ailo.io/privacy
+    status: 200
+  - url: https://ailo.io/security
+    status: 200
+  - url: https://help.ailo.io/hc/en-au
+    status: 403
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 14
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

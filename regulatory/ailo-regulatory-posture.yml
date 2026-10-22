@@ -1,0 +1,54 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://ailo.io/privacy
+pages_read:
+- url: https://ailo.io/privacy
+  http_status: 200
+  note: 'Privacy Policy, "Last updated: 30 July 2025"'
+- url: https://ailo.io/terms
+  http_status: 200
+- url: https://ailo.io/security
+  http_status: 200
+signals:
+  data_subject_request:
+    url: https://ailo.io/privacy
+    section: How can you access and correct your personal information?
+    rights_named: [access, correction]
+    evidence:
+    - source: https://ailo.io/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You may request access to personal information Ailo holds about you at any time by contacting us at
+        the contact details below. This does not include all personal information stored about you in the
+        Platform which may be personal information collected by a PM Company or a Service Provider which is
+        not personal information that can be shared with you by Ailo.
+    - source: https://ailo.io/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If you believe that any personal information we hold about you is incorrect, incomplete or
+        inaccurate, then you may request that we amend it.
+    note: >-
+      Access and correction rights (Australian Privacy Act style) via the policy's contact details. Data
+      uploaded by a property-management company or service provider is controlled by them and is carved
+      out of Ailo's access commitment. No deletion or portability right and no response time are stated.
+  data_residency:
+    url: https://ailo.io/privacy
+    section: Do we disclose your personal information to anyone outside Australia?
+    region: Australia
+    evidence:
+    - source: https://ailo.io/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We store all data securely in Australia. However, to operate our business we sometimes use the
+        services of third party IT service providers located overseas. This means that third party IT
+        service providers located in the other jurisdictions may at times have access to your personal
+        information so that we can continue to provide our product and services.
+    note: >-
+      Storage is stated as Australia-only, with a qualifier that overseas IT service providers may have
+      access. The overseas providers and their jurisdictions are not named, so no subprocessor list is
+      published (subprocessors signal not recorded). The security page also has an FAQ titled "Is data
+      stored in Australia?" whose answer did not render in the static HTML.

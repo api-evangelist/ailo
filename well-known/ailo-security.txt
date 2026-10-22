@@ -1,0 +1,5 @@
+# Our security address
+Contact: mailto:vulnerabilitydisclosure@ailo.io
+
+# Our security policy
+Policy: https://ailo.io/vulnerabilities

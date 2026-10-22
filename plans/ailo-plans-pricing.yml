@@ -1,0 +1,38 @@
+name: Ailo pricing
+generated: '2026-10-22'
+method: searched
+source: https://ailo.io/memberships-for-renters
+audience: consumer
+pricing_basis: ad-valorem
+published: true
+delivery:
+  delivery: managed
+note: Ailo publishes no developer API pricing. The only published prices are optional renter memberships, priced as a share of rent. Property-manager (agency) pricing is not published; ailo.io/sales is a "Talk to sales" page.
+plan_count: 3
+plans:
+- name: Ailo Everyday
+  description: Free membership tier for renters.
+  price: 0
+  price_text: Ailo Everyday is free.
+  features:
+  - savings goals
+  - personal bills
+  - expense tracking
+  - moving and inspection checklists
+  limits: []
+- name: Ailo Plus
+  description: Paid renter membership.
+  price_text: Ailo Plus is 0.95% of your rent.
+  features:
+  - paying and tracking eligible expenses
+  - automatic eligible payments
+  - eligible Australian debit and credit cards
+  limits: []
+- name: Ailo Global
+  description: Paid renter membership that includes everything in Plus.
+  price_text: Ailo Global is 3.99% of your rent.
+  features:
+  - everything in Plus
+  - eligible international cards
+  - translation support in more than 50 languages
+  limits: []

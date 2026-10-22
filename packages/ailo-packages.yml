@@ -1,0 +1,11 @@
+generated: '2026-10-22'
+method: none
+source: https://ailo.io/
+note: No first-party SDK, CLI or client library found. Ailo publishes no developer API or docs (the dossier found no contract on ailo.io, api.ailo.io or help.ailo.io). npm "ailo" (0.0.111) is an unrelated "Javascript Utils" package by edonet (github.com/edonet/ailo), not Ailo. npm @ailo/sdk and ailo-sdk return 404, and PyPI ailo returns 404. The GitHub org ailohq holds forks and infrastructure repos, none of them a client library.
+checked:
+- https://registry.npmjs.org/ailo (200, unrelated third party)
+- https://registry.npmjs.org/@ailo/sdk (404)
+- https://registry.npmjs.org/ailo-sdk (404)
+- https://pypi.org/pypi/ailo/json (404)
+- https://api.github.com/orgs/ailohq/repos
+packages: []

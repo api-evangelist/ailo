@@ -1,0 +1,26 @@
+name: Ailo MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  No official Ailo MCP server (hosted or local) was found, and Ailo publishes no
+  OpenAPI contract from which a candidate tool list could be derived, so no tools
+  are recorded.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+evidence:
+- url: https://help.ailo.io/mcp
+  status: 401
+  note: >-
+    Pre-flight contract discovery only; the control path on this Zendesk help host
+    also returned 401, so the response is opaque and is NOT evidence of an MCP
+    server. Ailo does not document or advertise this endpoint.
+- url: https://ailo.io/
+  status: 200
+  note: Company site; no MCP or developer API mentioned.
+- search: Ailo property management API developer MCP server
+  note: No Ailo MCP server or public API found (2026-10-22).
+tools: []
